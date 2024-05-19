@@ -3,8 +3,8 @@ package main_package;
 import view_game.GameFrame;
 
 /**
- * @author Belen Anahis Paca Silva
- * Tema: Juego Galaga
+ * @author Alexis Jhoel Hurtado Pinan
+ * Tema: Galaga
  */
 public class Main {
 	
