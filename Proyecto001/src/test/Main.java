@@ -11,6 +11,11 @@ import javax.swing.JPanel;
 
 public class Main {
 
+	/**
+	 * Autor: Alexis Hurtado
+	 * Titulo: Contenedores Java
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Layout ventana = new Layout();

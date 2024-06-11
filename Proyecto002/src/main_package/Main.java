@@ -5,7 +5,7 @@ import view_game.GameFrame;
 /**
  * @author Alexis Jhoel Hurtado Pinan
  * Tema: Galaga
- */
+ **/
 public class Main {
 	
 	public static void main(String[] args) {

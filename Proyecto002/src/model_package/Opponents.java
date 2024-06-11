@@ -3,30 +3,17 @@ package model_package;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Opponents implements IDrawable, IMovable {
+public class Opponents extends Role implements IDrawable, IMovable {
 
-	int[] cord_x = new int[5];
-	int[] cord_y = new int[5];
-
-	public Opponents(int randomX, int randomY) {
-		cord_x[0] = randomX;
-		cord_x[1] = randomX + 100;
-		cord_x[2] = randomX + 100;
-		cord_x[3] = randomX + 50;
-		cord_x[4] = randomX;
-
-		cord_y[0] = randomY;
-		cord_y[1] = randomY;
-		cord_y[2] = randomY + 50;
-		cord_y[3] = randomY + 25;
-		cord_y[4] = randomY + 50;
-
+	public Opponents(int[] cord_x, int[] cord_y) {
+		super(cord_x, cord_y);
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void draw(Graphics graphics) {
 		graphics.setColor(Color.GREEN);
-		graphics.fillPolygon(cord_x, cord_y, 5);
+		graphics.fillPolygon(getCordX(), getCordY(), 5);
 
 	}
 
@@ -37,8 +24,8 @@ public class Opponents implements IDrawable, IMovable {
 
 	@Override
 	public void moveDown(int variable) {
-		for (int i = 0; i < cord_y.length; i++) {
-			cord_y[i] = cord_y[i] + variable;
+		for (int i = 0; i < getCordY().length; i++) {
+			getCordY()[i] = getCordY()[i] + variable;
 
 		}
 
@@ -59,4 +46,5 @@ public class Opponents implements IDrawable, IMovable {
 		// TODO Auto-generated method stub
 
 	}
+
 }

@@ -50,51 +50,33 @@ public class GameFrame extends JFrame implements KeyListener{
 		
 		
 	}
+	
 	@Override
-	public void keyTyped(KeyEvent e) {
+	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
 	@Override
 	public void keyPressed(KeyEvent e) {
-		setFocusable(true);
-		switch (e.getKeyCode()) {
-		case KeyEvent.VK_LEFT:{
-			container.moveLeft(10);
-			break;
-		}
-		case KeyEvent.VK_RIGHT: {
-			container.moveRight(10);
-			break;
-	}
-		case KeyEvent.VK_M: {
-			container.drawShoot(getGraphics().create());
-			break;
-	}
-	
+		// TODO Auto-generated method stub
+		int tecla = e.getKeyCode();
+        if (tecla == KeyEvent.VK_SPACE) {
+            container.drawShoot(getGraphics().create());
+          //  container.moveUp(5);
+
+        } else if (tecla == KeyEvent.VK_LEFT) {
+            container.moveLeft(10);
+        } else if (tecla == KeyEvent.VK_RIGHT) {
+            container.moveRight(10);
+        }
 		
-		}
-		repaint();
+	}
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 			
 		
-		
-//prueba pescado
-	@Override
-	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
-		setFocusable(true);
-		switch (e.getKeyCode()) {
-		case KeyEvent.VK_N: {
-			container.moveUp(10);;
-			break;
-	}
-
-		}
-		repaint();
-	
-		
-	}
-	
 	
 }

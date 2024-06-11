@@ -7,7 +7,7 @@ public interface IMovable {
 	public void moveLeft(int variable);
 	public void moveRight(int variable);
 	
-		
-	
+//uno
+	//public void moveUp(int variable, IDrawable drawable);
 
 }
